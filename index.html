@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New York Times - Minimal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="border-bottom">
+        <div class="container">
+            <div class="row align-items-center py-2">
+                <div class="col-md-6">
+                    <h1 class="logo mb-0">The New York Times</h1>
+                </div>
+                <div class="col-md-6 text-end">
+                    <span class="date-text">Monday, January 27, 2025</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">U.S.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Arts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opinion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Games</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Breaking News -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="breaking-news">
+                    <span class="badge bg-danger me-2">BREAKING</span>
+                    <strong>Trump Announces 10% Tariff Increase on Canada Over Reagan Ad Spat</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Stories -->
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Main Story -->
+                <article class="main-story mb-4">
+                    <h2 class="headline">Donor Who Gave $130 Million to Pay Troops Is Reclusive Heir to Mellon Fortune</h2>
+                    <p class="lead">It remained unclear how far the donation from Timothy Mellon, a banking heir and railroad magnate, would go toward covering the troops' salaries.</p>
+                    <div class="story-meta">
+                        <span class="reading-time">4 min read</span>
+                        <span class="author">By John Doe</span>
+                    </div>
+                </article>
+
+                <!-- Secondary Stories -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <article class="story-card">
+                            <h4 class="story-title">In Florida, Obamacare Price Increases Pose an Outsize Threat</h4>
+                            <p class="story-excerpt">Health insurance costs are rising significantly across the state...</p>
+                            <span class="reading-time">5 min read</span>
+                        </article>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <article class="story-card">
+                            <h4 class="story-title">Keeping the House Absent, Johnson Marginalizes Congress and Himself</h4>
+                            <p class="story-excerpt">Speaker Mike Johnson's decision to hold the House in a hiatus during the shutdown...</p>
+                            <span class="reading-time">6 min read</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <h5 class="sidebar-title">Opinion</h5>
+                    <div class="opinion-item mb-3">
+                        <h6 class="opinion-title">Burnin' Down the House</h6>
+                        <p class="opinion-author">By Maureen Dowd</p>
+                        <span class="reading-time">5 min read</span>
+                    </div>
+                    <div class="opinion-item mb-3">
+                        <h6 class="opinion-title">Trump's Path of Destruction Is Far-Reaching</h6>
+                        <p class="opinion-author">By Jamelle Bouie</p>
+                        <span class="reading-time">6 min read</span>
+                    </div>
+
+                    <h5 class="sidebar-title mt-4">Most Popular</h5>
+                    <div class="popular-item mb-2">
+                        <span class="popular-number">1.</span>
+                        <span class="popular-title">What to Expect From Hurricane Melissa</span>
+                    </div>
+                    <div class="popular-item mb-2">
+                        <span class="popular-number">2.</span>
+                        <span class="popular-title">June Lockhart, Beloved Television Mother, Dies at 100</span>
+                    </div>
+                    <div class="popular-item mb-2">
+                        <span class="popular-number">3.</span>
+                        <span class="popular-title">Starring in Videos Is No Longer a Job Just for the Social Media Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Games Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="section-title">Games</h3>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="game-card">
+                            <h5>Wordle</h5>
+                            <p>Guess the 5-letter word with 6 chances.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="game-card">
+                            <h5>Connections</h5>
+                            <p>Group words that share a common thread.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="game-card">
+                            <h5>The Crossword</h5>
+                            <p>Get clued in with wordplay, every day.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="game-card">
+                            <h5>Spelling Bee</h5>
+                            <p>How many words can you make with 7 letters?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light border-top mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 The New York Times Company</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="footer-link me-3">Contact Us</a>
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
